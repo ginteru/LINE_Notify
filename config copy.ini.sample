@@ -1,0 +1,11 @@
+[DEFAULT]
+SERVER_ADDRESS=xxx.example.com
+IMAP_PORT=993
+
+MAIL_ADDRESS=line_notify@example.com
+MAIL_PASSWORD=mail_password_sample
+
+LINE_TOKEN=LyQxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+; 参考
+;   [Pythonで設定ファイルを読み込む処理をラップしてクラスとして扱うと便利](https://nainaistar.hatenablog.com/entry/2021/10/01/120000)

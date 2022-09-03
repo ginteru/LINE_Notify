@@ -1,0 +1,25 @@
+{
+    // フォーマッターの設定。autopep8 を指定する。
+    "python.formatting.provider": "autopep8",
+    // 1行の最大文字数はデフォルトでは80文字となっている。
+    // 以下の設定では200文字を超えた場合に、コード整形時に折り返しを行う設定。
+    // aggressiveを設定することでより積極的にコード整形してくれる。
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--max-line-length=200"
+    ],
+
+    // 標準の静的解析をOFFにし、代わりにflake8を利用する。
+    // 保存時に静的解析を行う。
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true, 
+    "python.linting.lintOnSave": true,
+    // flake8の設定で、【W293:空行には空白が含まれます】は、エディタの自動インデントに引っかかってしまうのでオフ。
+    // バイナリ演算子後に改行するとWarningになる【W504:バイナリ演算子後の改行】をオフ。
+    // 【E501:行が長すぎる】画面サイズによるがデフォルトの80文字だと割とすぐに折り返しになってしまうのでオフ。
+    // --max-complexityの設定ではプログラムの複雑度(分岐の多さの指標)を20までとしています。
+    "python.linting.flake8Args": [
+      "--ignore=W293, W504, E501",
+      "--max-complexity=20"
+    ],
+}
