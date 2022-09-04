@@ -20,7 +20,7 @@ import sys
 #   logging
 # =========================================#
 # - logging.conf読み込み
-#       Windowsではデフォルトエンコーディングがcsp932になることと
+#       Windowsではデフォルトエンコーディングがcp932になることと
 #       linuxとwindowsのpythonバージョンが違うことに起因して、osの場合分けで手抜き
 if os.name == 'nt':
     logging.config.fileConfig('logging.conf', encoding="utf-8")
