@@ -1,9 +1,6 @@
 # 書き方参考
 # https://www-creators.com/archives/1662
 
-# このファイル自体が不要
-.gitignore
-
 # logファイルの実態は不要
 log/*.log*
 
